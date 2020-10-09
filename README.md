@@ -1,12 +1,3 @@
-Note
-====
-No longer being updated, please refer to https://vincentyiu.co.uk for red team tips :)
-
-Credits
-=======
-
-The following tips were posted by @vysecurity on Twitter
-
 Disclaimer
 ==========
 
@@ -383,7 +374,7 @@ Red tip #184: We always talk about Windows and AD. But now let’s have a look a
 
 Red tip #185: Use WSUS for lateral movement https://github.com/AlsidOfficial/WSUSpendu/blob/master/WSUSpendu.ps1
 
-Red tip #186: View @jpcert https://www.jpcert.or.jp/english/pub/sr/20170612ac-ir_research_en.pdf … and look at all those indicators and artefacts left behind. Then hexedit those tools 👍
+Red tip #186: View @jpcert https://www.jpcert.or.jp/english/pub/sr/20170612ac-ir_research_en.pdf … and look at all those indicators and artefacts left behind. Then hexedit those tools.
 
 Red tip #187: Found a portal using 2FA? Using RSA SecureID? https://blog.netspi.com/targeting-rsa-emergency-access-tokencodes-fun-profit/ … Pin bruteforce!
 
@@ -407,15 +398,15 @@ Red tip #196: DA -> Locate DB -> Found MSSQL? https://github.com/NetSPI/PowerUpS
 
 Red tip #197: If ACL doesn’t let you read other users’ home shares, you can try net view \\fileserv /all to try other shares and folders!
 
-Red tip #198: Username jondoe and jondoe-x? Ones an Admin? Try same password. May be shared 😎 repeat for entire user list.
+Red tip #198: Username jondoe and jondoe-x? Ones an Admin? Try same password. May be shared repeat for entire user list.
 
 Red tip #199: Failed to phish? Payloads failing? Mac users? Write an email and ask them to open terminal and paste in python Empyre one line
 
 Red tip #200: @_wald0 blessed us with this BH cypher query to skip specific nodes to look for other paths. https://pastebin.com/qAzH9uji
 
-Red tip #201: @424f424f pushed some research into LNK files inside CAB can be used to bypass the Attachment Manager 👍http://www.rvrsh3ll.net/blog/informational/bypassing-windows-attachment-manager/
+Red tip #201: @424f424f pushed some research into LNK files inside CAB can be used to bypass the Attachment Manager http://www.rvrsh3ll.net/blog/informational/bypassing-windows-attachment-manager/
 
-Red tip #202: When domain fronting, your calls hit the edge node, so every domain you use potentially hits a different a IP! 😎
+Red tip #202: When domain fronting, your calls hit the edge node, so every domain you use potentially hits a different a IP!
 
 Red tip #203: If using @Cneelis StarFighter. Instead of using a staged web delivery, just stick while stageless payload as encoded block in!
 
@@ -447,13 +438,13 @@ Red tip #216: @424f424f just made me aware that FireEye can prevent runas from e
 
 Red tip #217: S4U can be used to delegate across SPN. So if you have msds-allowedtodelagateto HTTP you can exploit to obtain HOST and CIFS
 
-Red tip #218: You’re in a subnet where people RDP into but you can’t attack outwards? Set backdoor over tsclient on start keys. 😎
+Red tip #218: You’re in a subnet where people RDP into but you can’t attack outwards? Set backdoor over tsclient on start keys. 
 
 Red tip #219: Unsure what the localised admin account might be called or need to copy and paste? Check out https://social.technet.microsoft.com/wiki/contents/articles/13813.localized-names-for-administrator-account-in-windows.aspx
 
 Red tip #220: EDR monitoring “whoami”? Use echo %userprofile%; echo %username%. Or replace echo with anything that reflects error: ie. set
 
-Red tip #221: Network segregation in play? Try Get-NetSubnet, Get-NetSite in PowerView or browse in AD explorer. Can help find your way :)
+Red tip #221: Network segregation in play? Try Get-NetSubnet, Get-NetSite in PowerView or browse in AD explorer.
 
 Red tip #222: If you want to simulate MBR activity like #Petya, check out https://github.com/PowerShellMafia/PowerSploit/blob/master/Mayhem/Mayhem.psm1
 
@@ -466,3 +457,7 @@ Red tip #225: Stuck in a heavily segregated situation on a server? Try RDPIncept
 Red tip #226: Reduce AV detection by using fake Microsoft certificate.
 
 Red tip #227: Not using notifications yet for C2 events? For @armitagehacker's Cobalt Strike check out
+
+Credits
+=======
+These tips were posted by @vysecurity on Twitter.
